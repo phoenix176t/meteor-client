@@ -179,7 +179,7 @@ public class ParticleTrail extends Module {
         double velY = (Math.random() - 0.5) * 0.02;
         double velZ = (Math.random() - 0.5) * 0.02;
 
-        mc.world.addParticle((ParticleEffect) particleType, x, y, z, velX, velY, velZ);
+        mc.world.addParticleClient((ParticleEffect) particleType, x, y, z, velX, velY, velZ);
     }
 
     private ParticleType<?> getParticleType(boolean isFlying) {
